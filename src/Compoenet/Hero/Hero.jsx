@@ -1,5 +1,6 @@
 import { RiPlayLine } from 'react-icons/ri';
-
+import groupIcon from "../../assets/Group5.svg";
+import bannerImg from "../../assets/banner.png";
 
 const Hero = () => {
 return (
@@ -7,7 +8,7 @@ return (
     <div className=''>
           <div className='primaryfont space-y-6'>
           <div className='bg-[#E1E7FF] w-fit py-1 px-4 rounded-2xl flex gap-1.5'>
-            <img src="/src/assets/Group 5.svg" alt="" />
+            <img src={groupIcon} alt="" />
             <h4 className='   bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold'>New: AI-Powered Tools Availablev</h4>
           </div>
           <h1 className='text-[72px] text-[#101727] font-extrabold leading-tight'>Supercharge Your Digital Workflow</h1>
@@ -23,7 +24,7 @@ return (
           
           </div>
     </div>
-    <img src="/src/assets/banner.png" alt="" />
+    <img src={bannerImg} alt="" />
   </div>
 );
 };

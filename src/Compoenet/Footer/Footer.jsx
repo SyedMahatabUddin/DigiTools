@@ -1,3 +1,7 @@
+import Insta from "../../assets/insta.svg";
+import Facebook from "../../assets/facebook.svg";
+import X from "../../assets/x.svg";
+
 const Footer = () => {
 return (
   <div className="bg-[#101727] pt-10">
@@ -34,8 +38,6 @@ return (
           </ul>
        </div>
 
-
-
          {/* resource section */}
        <div className="space-y-4">
           <p className="text-white text-xl font-medium" >Product</p>
@@ -51,13 +53,13 @@ return (
           <p className="text-white text-xl " >Social Links</p>
           <div className="flex gap-4">  
               <div  className="bg-white p-2 rounded-full w-fit">
-              <img  src="/src/assets/insta.svg" alt="Insta icon" /> 
+              <img  src={Insta} alt="Insta icon" /> 
               </div>
               <div className="bg-white p-2 rounded-full w-fit">
-              <img  src="/src/assets/facebook.svg" alt="facebook icon" />
+              <img  src={Facebook} alt="facebook icon" />
               </div>
               <div className="bg-white p-2 rounded-full w-fit">
-              <img  src="/src/assets/x.svg" alt="X icon" />
+              <img  src={X} alt="X icon" />
               </div>
           </div>
        </div>

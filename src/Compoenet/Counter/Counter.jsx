@@ -1,8 +1,8 @@
 
 const Counter = () => {
 return (
- <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-10 space-x-28 flex items-center text-center justify-center my-5'>
-     
+ <div className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-10 my-5 justify-items-center'>
+   <div className="max-w-300  space-x-28 flex items-center text-center ">
      <div>
         <p className='text-white font-extrabold text-6xl '>50+</p>
         <p className='text-white font-medium text-2xl '>Active Users</p>
@@ -17,6 +17,7 @@ return (
           <p className='text-white font-extrabold text-6xl'>4.9</p>
           <p className='text-white font-medium text-2xl '>Rating</p>
      </div>
+   </div>
 
  </div>
 );
