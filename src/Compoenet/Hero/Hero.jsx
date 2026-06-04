@@ -4,7 +4,7 @@ import bannerImg from "../../assets/banner.png";
 
 const Hero = () => {
 return (
-  <div className=' flex flex-col-reverse md:flex-row mx-auto max-w-6xl items-center px-2 md:px-0 sm:px-5 py-0 sm:py-20 gap-5'>
+  <div className=' flex flex-col-reverse md:flex-row mx-auto max-w-6xl items-center px-0 md:px-6 py-0 sm:py-20 gap-5'>
     <div className='text-center md:text-left'>
           <div className='primaryfont space-y-6'>
           <div className='bg-[#E1E7FF] mx-auto sm:mx-0 w-fit py-1 px-4 rounded-2xl flex gap-1.5'>
@@ -24,7 +24,7 @@ return (
           
           </div>
     </div>
-    <img src={bannerImg} alt="" className="w-full max-w-md md:max-w-xl  h-96 sm:h-auto object-cover mx-auto" />
+    <img src={bannerImg} alt="" className="w-full max-w-md md:max-w-xl  sm:h-auto object-cover mx-auto" />
   </div>
 );
 };

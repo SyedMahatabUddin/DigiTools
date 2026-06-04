@@ -1,7 +1,7 @@
 
 const Trial = () => {
 return (
-   <div className="bg-white  py-10 md:py-20 px-4 md:px-0 my-20" >
+   <div className="bg-white  py-10 md:py-20 px-6 md:px-0 my-20" >
     <div className="space-y-3 text-center" >
      
           <h1 className="text-[#101727]  text-4xl sm:text-5xl font-extrabold ">Simple, Transparent Pricing</h1>

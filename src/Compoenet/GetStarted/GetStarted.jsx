@@ -5,7 +5,7 @@ import Box from "../../assets/package.png";
 const GetStarted = () => {
 return (
 
-  <div className="bg-[#F9FAFC] ">
+  <div className="bg-[#F9FAFC]  py-20 px-6 md:px-0">
      <div className="space-y-2 sm:space-y-3 text-center" >
         <h1 className="text-[#101727] text-4xl sm:text-5xl font-extrabold ">Get Started in 3 Steps</h1>
         <p className="text-[#627382] text-[16px] ">Start using premium digital tools in minutes, not hours.</p>

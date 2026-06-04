@@ -4,7 +4,7 @@ import X from "../../assets/x.svg";
 
 const Footer = () => {
 return (
-  <div className="bg-[#101727] pt-0 md:pt-10 px-5">
+  <div className="bg-[#101727] pt-0 md:pt-10 px-4">
    <div className="max-w-6xl w-full mx-auto">
       
           {/* contact and details section */}
@@ -66,11 +66,11 @@ return (
     </div>
 
           {/* privacy and policy section */}
-    <div className=" border-t gap-8 border-[#ffffff50] flex justify-between py-4 sm:py-8">
+    <div className="items-center border-t gap-8 border-[#ffffff50] flex justify-between py-4 sm:py-8">
         <div>
-         <span className="text-white text-[16px]">© 2026 Digitools. All rights reserved.</span>
+         <span className="text-white text-[12px] sm:text-[16px]">© 2026 Digitools. All rights reserved.</span>
          </div>
-        <div className="text-white text-[16px] flex gap-3 md:gap-6">
+        <div className="text-white flex gap-3 md:gap-6 text-[12px] sm:text-[16px]">
           <p>Privacy Policy</p>
           <p> Terms of Service </p>
           <p>Cookies</p>

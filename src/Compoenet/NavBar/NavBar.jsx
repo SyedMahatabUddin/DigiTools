@@ -4,7 +4,7 @@ const NavBar = ({carts}) => {
 
  return (
 <div className='shadow-sm'>
-  <div className=" mx-auto max-w-6xl flex items-center justify-between px-2 lg:px-0 py-2.5 md:py-5 ">
+  <div className=" mx-auto max-w-6xl flex items-center justify-between sm:px-6 px-3 lg:px-0 py-2.5 md:py-5 ">
     {/* logo section */}
     <div>
       <a className="btn-ghost cursor-pointer sm:text-3xl text-2xl font-black bg-linear-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">DigiTools</a>
@@ -48,8 +48,8 @@ const NavBar = ({carts}) => {
        <button className='btnPrimary hover:btnHoverPrimary text-white '>Get Started</button>
 
       <div className="dropdown dropdown-end lg:hidden">
-        <div tabIndex={0} role="button" className=" m-1"><CgMenuBoxed className="btn px-0 text-purple-800" /></div>
-          <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box  z-1 w-52 p-2 shadow-sm space-y-2">
+        <div tabIndex={0} role="button" ><CgMenuBoxed className="btn px-0 w-8 h-8 text-purple-800" /></div>
+          <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-28 p-4 shadow-sm  space-y-2">
                   <li className='cursor-pointer hover:text-blue-400 transition '>Products</li>
                   <li className='cursor-pointer hover:text-blue-400 transition '>Features</li>
                   <li className='cursor-pointer hover:text-blue-400 transition '>Pricing</li>
