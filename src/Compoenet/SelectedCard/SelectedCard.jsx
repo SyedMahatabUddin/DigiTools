@@ -12,7 +12,7 @@ if (carts.length === 0) {
     <div className="-space-y-40 border-3 rounded-2xl border-[#F2F2F2] w-6xl  my-10 " >
       <p className="font-extrabold text-[#101727] text-[18px] m-6">Your cart</p>
       <div className="flex flex-col space-y-5 my-5 items-center justify-center w-full">
-      <img className="max-w-40 " src="/src/assets/cart.png" alt="" />
+      <img className="max-w-40 " src="./src/assets/cart.png" alt="" />
       <p className=" text-xl">
           Your cart is empty
       </p>
@@ -43,7 +43,7 @@ return (
               <p className="text-[#101727]  text-[16px] ">Total</p>
               <span className="text-[#101727] font-bold text-2xl ">${totalCart}</span>
             </div>
-            <button className="btnPrimary w-full font-light ">Proceed to Checkout</button>
+            <button onClick={() => setcart([])} className="btnPrimary w-full font-light ">Proceed to Checkout</button>
   </div>
 );
 };

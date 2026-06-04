@@ -43,7 +43,7 @@ return (
 
                  <p className='text-2xl font-bold text-[#101727] ' >{Cart.title}</p>
                  <p className='min-w-20 text-[16px] text-[#627282] '>{Cart.description}</p>
-                 <p className=' text-[#627282]'><span className='text-2xl font-bold text-[#101727] '>{Cart.price}</span>{Cart.billing_cycle}</p>
+                 <p className=' text-[#627282]'><span className='text-2xl font-bold text-[#101727] '>$ {Cart.price}</span>{Cart.billing_cycle}</p>
                  <ul className='leading-6 text-[#627282] font-medium'>
                     <li className="flex gap-1 items-center"><FaCheck className="text-green-600"/> {Cart.features}</li>
                     <li className="flex gap-1 items-center"><FaCheck className="text-green-600"/>  {Cart.features[1] }</li>
@@ -52,7 +52,7 @@ return (
                     {Cart.features?.[3] && (
                       <li className="flex gap-1 items-center"><FaCheck className="text-green-600"/>  {Cart.features[3] }</li>)}
                  </ul>
-                <button disabled={adedCart(Cart.title)} onClick={() => addCart(Cart)} className='btnPrimary  w-full font-light '>{adedCart(Cart.title) ? 'Already Added' : 'Buy Now'}</button>
+                <button disabled={adedCart(Cart.title)} onClick={() => addCart(Cart)} className='btnPrimary  w-full font-light '>{adedCart(Cart.title) ? ' Added' : 'Buy Now'}</button>
               </div>
           </div>
       
