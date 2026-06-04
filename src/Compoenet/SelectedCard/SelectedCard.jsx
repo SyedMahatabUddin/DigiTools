@@ -1,3 +1,4 @@
+import cartImg from "../../assets/cart.png";
 
 const SelectedCard = ({setcart , carts}) => {
    
@@ -12,7 +13,7 @@ if (carts.length === 0) {
     <div className="-space-y-40 border-3 rounded-2xl border-[#F2F2F2] w-6xl  my-10 " >
       <p className="font-extrabold text-[#101727] text-[18px] m-6">Your cart</p>
       <div className="flex flex-col space-y-5 my-5 items-center justify-center w-full">
-      <img className="max-w-40 " src="./src/assets/cart.png" alt="" />
+      <img className="max-w-40 " src={cartImg} alt="" />
       <p className=" text-xl">
           Your cart is empty
       </p>

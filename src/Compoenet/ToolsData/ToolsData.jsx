@@ -33,10 +33,10 @@ return (
                 </div>
                 <div className={ `h-fit items-center  py-1 px-4 rounded-2xl flex gap-1.5
                     ${Cart.badge === 'Popular' 
-                    ? 'bg-[#E1E7FF]  ' : (Cart.badge==='Best Seller'|| Cart.badge=== 'New') ? 'bg-[#FEF3C6]  ' : ' bg-[#DBFCE7]  ' }  `}>
+                    ? 'bg-[#E1E7FF]  ' : Cart.badge==='Best Seller'? 'bg-[#FEF3C6]  ' : ' bg-[#DBFCE7]  ' }  `}>
                    <h4 className={` font-medium text-[14px]
                     ${Cart.badge === 'Popular' 
-                    ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]  bg-clip-text text-transparent' : (Cart.badge==='Best Seller'|| Cart.badge=== 'New') ? ' text-[#BB4D00] ' : '  text-[#0A883E] ' } `}>{Cart.badge}</h4>
+                    ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]  bg-clip-text text-transparent' : Cart.badge==='Best Seller' ? ' text-[#BB4D00] ' : '  text-[#0A883E] ' } `}>{Cart.badge}</h4>
                 </div >
               </div >
               <div className='space-y-3'>
