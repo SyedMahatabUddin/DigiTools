@@ -1,18 +1,18 @@
 
 const Trial = () => {
 return (
-   <div className="bg-white py-16" >
+   <div className="bg-white  py-10 md:py-20 px-4 md:px-0 my-20" >
     <div className="space-y-3 text-center" >
      
-          <h1 className="text-[#101727] text-5xl font-extrabold ">Simple, Transparent Pricing</h1>
+          <h1 className="text-[#101727]  text-4xl sm:text-5xl font-extrabold ">Simple, Transparent Pricing</h1>
           <p className="text-[#627382] text-[16px] ">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
      </div>
 
 
-     <div className="grid grid-cols-1 md:grid-cols-3 items-stretch justify-center mx-auto gap-5  max-w-300 mt-4">
+     <div className="grid grid-cols-1 md:grid-cols-3 items-stretch justify-center gap-10 mx-auto   max-w-300 mt-4">
 
 
-         <div className="w-full border-[#F6F6F6] bg-white flex flex-col justify-between my-10 pt-10 pb-20 px-5  rounded-2xl border-2 ">
+         <div className="w-full border-[#F6F6F6] bg-white flex flex-col justify-between pt-10 pb-20 px-5  rounded-2xl border-2 ">
            <div className="$$card-body space-y-3">
            <div className="">
              <span className="text-2xl font-bold text-[#101727] ">Most Popular</span>
@@ -46,7 +46,7 @@ return (
          </div>
 
 
-         <div className=" border-[#F6F6F6] flex flex-col items-center my-10 pt-10 pb-20 px-5  rounded-2xl border-2 space-y-4 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] relative">
+         <div className=" border-[#F6F6F6] flex flex-col items-center pt-10 pb-20 px-5  rounded-2xl border-2 space-y-4 bg-linear-to-r  from-[#4F39F6] to-[#9514FA] relative">
            <div className="$$card-body space-y-3">
             <div className="bg-[#FEF3C6] py-2 px-4 rounded-full mx-auto w-fit justify-items-center absolute -top-4 left-1/2 -translate-x-1/2 shadow-sm whitespace-nowrap">
               <p className="text-[#BB4D00] font-medium">Most Popular</p>
@@ -90,9 +90,7 @@ return (
          </div>
 
 
-
-
-         <div className=" border-[#F6F6F6] bg-white flex flex-col items-center my-10 pt-10 pb-20 px-5  rounded-2xl border-2 space-y-4 hover">
+         <div className=" border-[#F6F6F6] bg-white flex flex-col items-center pt-10 pb-20 px-5  rounded-2xl border-2 space-y-4 hover">
            <div className="$$card-body space-y-3">
            <div className="">
              <span className="text-2xl font-bold text-[#101727] ">Most Popular</span>

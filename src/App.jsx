@@ -14,7 +14,7 @@ function App() {
  const [carts , setcart] = useState([]);
 
   return (
-<>
+<div className="w-full min-h-screen bg-white block overflow-x-hidden">
 <NavBar carts={carts} />
 <Hero/>
 <Counter/>
@@ -24,7 +24,7 @@ function App() {
 <Workflow/>
 <Footer/>
 <Toaster/>
-</>
+</div>
   )
 }
 

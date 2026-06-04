@@ -3,31 +3,27 @@ import { CgMenuBoxed } from "react-icons/cg";
 const NavBar = ({carts}) => {
 
  return (
-<div className='w-full shadow-sm '>
+<div className='shadow-sm'>
+  <div className=" mx-auto max-w-6xl flex items-center justify-between px-2 lg:px-0 py-2.5 md:py-5 ">
+    {/* logo section */}
+    <div>
+      <a className="btn-ghost cursor-pointer sm:text-3xl text-2xl font-black bg-linear-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">DigiTools</a>
 
-   <div className="w-full max-w-300 mx-auto flex items-center justify-between py-5 px-6">
-    {/* Logo section */}
-     <div className="flex ">
- 
-     <a className="btn-ghost cursor-pointer text-3xl font-extrabold bg-linear-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent ">DigiTools</a>
-   
-   </div>
-   {/* Nav Menu section */}
-   <div className='hidden md:block'>
+    </div>
+    {/* menu section */}
+    <div>
+      <ol className='hidden lg:flex flex-row primaryfont gap-8  '>
+        <li className='cursor-pointer hover:text-blue-400 transition '>Products</li>
+        <li className='cursor-pointer hover:text-blue-400 transition '>Features</li>
+        <li className='cursor-pointer hover:text-blue-400 transition '>Pricing</li>
+        <li className='cursor-pointer hover:text-blue-400 transition '>Testomonial</li>
+        <li className='cursor-pointer hover:text-blue-400 transition '>FAQ</li>
+      </ol>
+    </div>
+    {/* cart count section */}
+    <div className="space-x-1.5 sm:space-x-4">
 
-     <ol className='hidden lg:flex flex-row primaryfont gap-8  '>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Products</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Features</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Pricing</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Testomonial</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>FAQ</li>
-     </ol>
 
-   </div>
-
-  {/* add to cart count section */}
- <div className="flex gap-6">
-  <div className="flex-none">
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
@@ -47,27 +43,26 @@ const NavBar = ({carts}) => {
         </div>
       </div>
      </div>
-    </div>
-      
+
        <button className='primaryfont'>Login</button>
        <button className='btnPrimary hover:btnHoverPrimary text-white '>Get Started</button>
 
-{/* nav drop down menu  */}
-<div className="dropdown dropdown-end lg:hidden">
-  <div tabIndex={0} role="button" className="btn m-1"><CgMenuBoxed /></div>
-  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box  z-1 w-52 p-2 shadow-sm space-y-2">
-          <li className='cursor-pointer hover:text-blue-400 transition '>Products</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Features</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Pricing</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>Testomonial</li>
-          <li className='cursor-pointer hover:text-blue-400 transition '>FAQ</li>
-  </ul>
-</div>
+      <div className="dropdown dropdown-end lg:hidden">
+        <div tabIndex={0} role="button" className=" m-1"><CgMenuBoxed className="btn px-0 text-purple-800" /></div>
+          <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box  z-1 w-52 p-2 shadow-sm space-y-2">
+                  <li className='cursor-pointer hover:text-blue-400 transition '>Products</li>
+                  <li className='cursor-pointer hover:text-blue-400 transition '>Features</li>
+                  <li className='cursor-pointer hover:text-blue-400 transition '>Pricing</li>
+                  <li className='cursor-pointer hover:text-blue-400 transition '>Testomonial</li>
+                  <li className='cursor-pointer hover:text-blue-400 transition '>FAQ</li>
+          </ul>
+        </div>
 
      </div>
-   </div>
 
-</div>
+    </div>
+  </div>
+
     );
 };
 

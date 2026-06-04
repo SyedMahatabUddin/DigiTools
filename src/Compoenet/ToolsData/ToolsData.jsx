@@ -22,7 +22,7 @@ const ToolsData = ({carts , setcart}) => {
   }
    
 return (
-  <div  className="grid grid-cols-3 gap-6 my-10 ">
+  <div  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-10 ">
    {
     CartData.map((Cart ,index) =>(
       
@@ -42,7 +42,7 @@ return (
               <div className='space-y-3'>
 
                  <p className='text-2xl font-bold text-[#101727] ' >{Cart.title}</p>
-                 <p className='w-83 text-[16px] text-[#627282] '>{Cart.description}</p>
+                 <p className='min-w-20 text-[16px] text-[#627282] '>{Cart.description}</p>
                  <p className=' text-[#627282]'><span className='text-2xl font-bold text-[#101727] '>{Cart.price}</span>{Cart.billing_cycle}</p>
                  <ul className='leading-6 text-[#627282] font-medium'>
                     <li className="flex gap-1 items-center"><FaCheck className="text-green-600"/> {Cart.features}</li>
