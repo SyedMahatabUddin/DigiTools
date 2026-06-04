@@ -1,7 +1,7 @@
 import { use } from "react";
 import toast from "react-hot-toast";
 import { FaCheck } from "react-icons/fa6";
-const Data = fetch('/toolsData.json')
+const Data = fetch('toolsData.json')
 .then(res=>res.json());
 
 const ToolsData = ({carts , setcart}) => {
